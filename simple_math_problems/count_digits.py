@@ -18,7 +18,8 @@ class Solution:
         N = abs(N)
         return 0 if N == 0 else len(str(N))
 
-sol = Solution()
-N = -6778
-res = sol.alternative(N)
-print(f"Number of digits in {N} is {res}")  
+if __name__ == "__main__":
+    sol = Solution()
+    N = -6778
+    res = sol.alternative(N)
+    print(f"Number of digits in {N} is {res}")  
