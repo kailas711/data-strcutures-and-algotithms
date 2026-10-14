@@ -38,3 +38,11 @@ class Solution:
             if arr[i]>arr[i+1]:
                 return False 
         return True
+# Reverse an array
+class Solution:
+    def reverse(self, arr: list, n: int) -> None:
+        i,j = 0,n-1
+        while i<j:
+            arr[i], arr[j] = arr[j], arr[i]
+            i+=1
+            j-=1
